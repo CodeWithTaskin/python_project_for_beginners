@@ -15,14 +15,12 @@ Please select one of the following options
             break
         else:
             print("Invalid Input")
-        
-    if choice == 1:
+    def addTask():
         new_task = input("Please enter a new task: ")
         with open("""E:/python_project/python_project_for_beginners/To-do-List/newTask.txt""","r+") as task:
                 line = len(task.readlines())
                 task.write(f"#{line}: {new_task}\n")
-
-    if choice == 2:
+    def deleteTask():
         delete_task = input("Do you want to delet all task or one task(D or O)? ")
         if delete_task.lower() == "d":
             with open("E:/python_project/python_project_for_beginners/To-do-List/newTask.txt","r+") as task:
@@ -42,9 +40,21 @@ Please select one of the following options
                     break
                 else:
                     print("Invalid Input")
-    if choice == 3:
+
+    def listTask():
         with open("E:/python_project/python_project_for_beginners/To-do-List/newTask.txt","r+") as task:
             print(task.read())
+
+
+
+            
+    if choice == 1:
+        addTask()
+
+    if choice == 2:
+        deleteTask()
+    if choice == 3:
+        listTask()
 
     if choice == 4:
         print("GoodBye 👋👋👋")
