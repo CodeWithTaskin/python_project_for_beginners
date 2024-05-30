@@ -1,0 +1,1 @@
+Open a file in read mode that contains a character then use an Infinite while loop to read each character from the file and the loop will break if no character is left in the file to read then Display each character from each line in the text file.
