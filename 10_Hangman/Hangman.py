@@ -1,6 +1,27 @@
 import random as r
 from random_word import random_word as rw
 from Hangmanpic import HANGMANPICS
+print("""
+ 
+                    _______
+                  |/      |
+                  |      (_)
+                  |      \|/
+                  |       |
+                  |      / \\
+                  |
+ _               _|___                          
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/ 
+
+        """)
+
+
 word = r.choice(rw)
 life = 8
 death = -1

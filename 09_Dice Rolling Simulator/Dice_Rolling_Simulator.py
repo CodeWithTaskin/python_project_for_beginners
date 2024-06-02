@@ -44,6 +44,13 @@ DICE_ART = {
         "└─────────┘",
     ),
 }
+print("""
+ /\' .\    _____
+/: \___\  / .  /\\
+\' / . / /____/..\\
+ \/___/  \'  '\  /
+          \'__'\/
+      """)
 while True:
     dice_roll1 = random.randint(1,6)
     dice_roll2 = random.randint(1,6)
